@@ -1,0 +1,198 @@
+* {
+  margin: 0%;
+  font-family: cursive;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  background-color: #7fb77e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffdd;
+  padding: 10px 20px 10px 20px;
+}
+
+.list {
+  font-size: 20px;
+  display: flex;
+  gap: 45px;
+  list-style-type: none;
+}
+
+.list a {
+  color: #ffffdd;
+  text-decoration: none;
+}
+
+.list a:hover {
+  color: #ffc090;
+}
+
+.btn-about {
+  border: 0px;
+  padding: 8px 18px 8px 18px;
+  font-size: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-about:hover {
+  scale: 1.09;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  /* background-color: #ffc090; */
+  padding: 8px;
+}
+
+.hero-section div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.hero-section .cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  padding: 20px;
+}
+
+.hero-section .cta button {
+  width: 15%;
+  background-color: #ffc090;
+  border: none;
+  color: #ffffdd;
+  border-radius: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.hero-section .cta h1 {
+  font-size: 24px;
+}
+
+.hero-section .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .hero-image {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+}
+
+.menu-makanan {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  height: 100vh;
+}
+
+.menu-makanan h1 {
+  font-size: 36px;
+  /* text-align: center; */
+}
+
+.menu-makanan p {
+  width: 720px;
+  text-align: center;
+}
+.card-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  border-radius: 16px;
+  border: 2px solid black;
+  padding: 16px;
+  gap 12px
+}
+
+.deskripsi{
+  width: 250px;
+  text-align: center;
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.img-makanan {
+  width: 250px;
+}
+
+.btn-pesan {
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 12px;
+  border: 0;
+  background-color: brown;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  gap: 16px;
+}
+
+.footer {
+  background-color: tomato;
+  color: white;
+}
+
+.footer > div {
+  padding: 16 px 32px 16px 32px;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sosial-media{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sosial-media > a {
+  margin-right: 8px;
+}
+
+.sosial-media img {
+  width: 24px;
+  height: 24px;
+}
+
+.bottom-footer {
+  background-color: red;
+}
+
+.bottom-footer h6{
+  text-align: center;
+}
