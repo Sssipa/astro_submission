@@ -3,21 +3,38 @@
   font-family: sans-serif;
 }
 
+body {
+  background-image: url(img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 /* Header */
 .header {
   position: sticky;
   top: 0px;
-  background-color: #597e52;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #ffffec;
+  color: white;
   padding: 15px 25px 15px 25px;
-  opacity: 0.9;
+  background: transparent;
+  border-bottom: solid 2px black;
 }
 
 .header h1 {
   font-size: 40px;
+  text-shadow: 0 0 15px black;
 }
 
 .list {
@@ -28,12 +45,13 @@
 }
 
 .list a {
-  color: #ffffec;
+  color: white;
   text-decoration: none;
+  text-shadow: 0 0 15px black;
 }
 
 .list a:hover {
-  color: #d4be8f;
+  color: #ffffec;
   font-weight: bolder;
 }
 
@@ -58,19 +76,20 @@
   height: 15px;
 }
 
+.search-box input ::-webkit-input-placeholder {
+  padding: 100px;
+}
 /* Hero-section */
 .hero-section {
   display: flex;
   justify-content: space-between;
   height: 100vh;
-  background-color: white;
-  padding: 8px;
 }
 
 .hero-section div {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; */
   width: 50%;
   height: 100%;
 }
@@ -85,10 +104,15 @@
 
 .hero-section .cta h1 {
   font-size: 50px;
+  color: #ffffec;
+  text-shadow: 0 0 15px black;
 }
 
-.hero-section p {
+.hero-section .cta p {
   line-height: 24px;
+  color: white;
+  font-size: 18px;
+  text-shadow: 0 0 50px black;
 }
 
 .hero-section .cta button {
@@ -120,9 +144,10 @@
 .about-section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 100vh;
   background-color: #597e52;
-  gap: 18px;
+  overflow: hidden;
 }
 
 .about-section div {
@@ -144,6 +169,7 @@
   flex-direction: column;
   line-height: 30px;
   margin-top: 30px;
+  margin-right: 6px;
 }
 
 .about-desc .about-title {
@@ -183,7 +209,7 @@
 /* Section 3 */
 
 .berita-section {
-  padding: 50px;
+  /* padding: 50px; */
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -239,6 +265,79 @@
 }
 
 .btn-pesan {
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 12px;
+  background-color: #ffffec;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.jelajahi {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.destinasi {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px 20px 0px 20px;
+gap: 20px;
+width: 100wv;
+height: 100vh;
+background-color: #ffffec;
+}
+
+.destinasi h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.card-destinasi {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.tempat-destinasi {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.tempat-destinasi h3 {
+  font-size: 25px;
+  border-bottom: black;
+}
+
+.frame-destinasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.frame-destinasi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.all-destinasi {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-destinasi {
   font-size: 14px;
   border-radius: 20px;
   padding: 12px;
